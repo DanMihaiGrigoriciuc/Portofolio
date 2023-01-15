@@ -1,0 +1,20 @@
+{
+  "name": "rok-design-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve --quiet",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "html-prettify": "^1.0.7",
+    "require-glob": "^4.1.0",
+    "slugify": "^1.6.5"
+  }
+}

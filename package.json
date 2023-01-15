@@ -1,0 +1,22 @@
+{
+  "name": "rok-ds",
+  "version": "1.0.0",
+  "description": "web components playground",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --filter \"rok-design-system\" run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasile-rok/rok-ds.git"
+  },
+  "author": "rok vle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasile-rok/rok-ds/issues"
+  },
+  "homepage": "https://github.com/vasile-rok/rok-ds#readme",
+  "devDependencies": {
+    "pnpm": "^7.22.0"
+  }
+}
