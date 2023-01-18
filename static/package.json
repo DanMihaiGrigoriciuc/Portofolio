@@ -1,0 +1,14 @@
+{
+  "name": "static",
+  "version": "1.0.0",
+  "description": "css and assets",
+  "main": "index.js",
+  "scripts": {
+    "styles": "sass styles:../_site/static/css --watch"
+  },
+  "author": "dan",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
