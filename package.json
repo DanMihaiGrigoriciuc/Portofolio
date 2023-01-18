@@ -18,5 +18,8 @@
   "homepage": "https://github.com/vasile-rok/rok-ds#readme",
   "devDependencies": {
     "pnpm": "^7.22.0"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }
