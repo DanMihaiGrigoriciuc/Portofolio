@@ -1,17 +1,19 @@
-.title{
-    font-size: 24px;
-    padding: 10px 10px 0 10px;;
-  }
-  .body-card{
-    padding: 10px;
-  }
-  .foot{
-    background: #6699ff;
-    border-radius:0 0 15px 15px;
-    padding: 10px;
-    text-align:center;
-  }
-  .foot-card a{
-    text-decoration: none;
-    color: white;
-  }
+$primary-color: red;
+
+.title {
+  color: $primary-color;
+  font-size: 24px;
+  padding: 10px 10px 0 10px;
+}
+.body-card {
+  padding: 10px;
+}
+.foot {
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  text-align: center;
+}
+.foot-card a {
+  text-decoration: none;
+  color: white;
+}
