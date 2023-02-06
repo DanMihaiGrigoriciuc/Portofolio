@@ -1,0 +1,6 @@
+{
+  "tags": "designSystem",
+  "bodyClass": "design-system",
+  "templateEngineOverride": "njk, md",
+  "layout": "blog"
+}
