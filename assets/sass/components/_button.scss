@@ -1,2 +1,26 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
+.dg-button {
+  background-color: var(--color-primary-300);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: 999rem;
+  color: var(--color-neutral-100);
+  cursor: pointer;
+  border: 1px solid var(--color-primary-300);
+  outline: none;
+
+  &:hover {
+    padding: var(--space-xs) calc(2 * var(--space-md));
+    transition: padding 500ms;
+  }
+
+  &[disabled] {
+    background-color: var(--color-neutral-300);
+    cursor: default;
+    border-color: var(--color-neutral-300);
+
+    &:hover {
+      padding: var(--space-xs) var(--space-md);
+    }
+  }
+}
