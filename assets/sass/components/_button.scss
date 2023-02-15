@@ -8,21 +8,28 @@
   cursor: pointer;
   border: 1px solid var(--color-primary-300);
   outline: none;
+  text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &[aria-current="page"] {
     padding: var(--space-xs) calc(2 * var(--space-md));
     transition: padding 500ms;
+    color: var(--color-neutral-100);
+  }
+
+  &[aria-current="page"] {
+    background-color: var(--color-primary-200);
+    border-color: var(--color-primary-200);
   }
 
   &[disabled] {
     background-color: var(--color-neutral-300);
     cursor: default;
     border-color: var(--color-neutral-300);
-    
+
     &:hover {
       padding: var(--space-xs) var(--space-md);
     }
-    
   }
 
   &:focus {
