@@ -18,9 +18,14 @@
     background-color: var(--color-neutral-300);
     cursor: default;
     border-color: var(--color-neutral-300);
-
+    
     &:hover {
       padding: var(--space-xs) var(--space-md);
     }
+    
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-primary-300);
   }
 }
