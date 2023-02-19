@@ -3,7 +3,10 @@
   <ul role="list" >
     {%- for entry in navPages %}
       <li>
-        <a class="dg-button" href="{{ entry.url | url }}" {% if entry.url == page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a>
+        <a class="dg-button dg-button--with-icon" href="{{ entry.url | url }}" {% if entry.url == page.url %} aria-current="page" {% endif %}>
+          <img class="dg-icon" src="/assets/img/dg-icon.png"></img>
+          {{ entry.title }}
+        </a>
       </li>
     {%- endfor %}
   </ul>
