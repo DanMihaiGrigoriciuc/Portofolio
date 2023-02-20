@@ -9,6 +9,7 @@
   border: 1px solid var(--color-primary-300);
   outline: none;
   text-decoration: none;
+  display: inline-flex;
 
   &:hover,
   &[aria-current="page"] {
@@ -34,5 +35,12 @@
 
   &:focus {
     outline: 2px solid var(--color-primary-300);
+  }
+
+  &--with-icon {
+    color: aqua;
+  }
+  .dg-icon {
+    padding: var(--space-xs) var(--space-xs);
   }
 }
