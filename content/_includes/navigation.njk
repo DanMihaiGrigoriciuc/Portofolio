@@ -3,9 +3,15 @@
   <ul role="list" >
     {%- for entry in navPages %}
       <li>
-        <a class="dg-button dg-button--with-icon" href="{{ entry.url | url }}" {% if entry.url == page.url %} aria-current="page" {% endif %}>
-          <img class="dg-icon" src="/assets/img/dg-icon.png"></img>
+        <a class="dg-button" href="{{ entry.url | url }}" {% if entry.url == page.url %} aria-current="page" {% endif %}>
+          <img class="dg-icon" src="/assets/img/dg-icon.png" alt=""></img>
           {{ entry.title }}
+        </a>
+        <a class="dg-button dg-button--with-icon" href="{{ entry.url | url }}" {% if entry.url == page.url %} aria-current="page" {% endif %}>          
+          <span>{{ entry.title }}</span>
+        </a>
+        <a class="dg-button dg-button--with-favicon" href="{{ entry.url | url }}" {% if entry.url == page.url %} aria-current="page" {% endif %}>          
+          <span>{{ entry.title }}</span>
         </a>
       </li>
     {%- endfor %}

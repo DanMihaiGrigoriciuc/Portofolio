@@ -2,7 +2,7 @@
 
 .dg-button {
   background-color: var(--color-primary-300);
-  padding: var(--space-xs) var(--space-md);
+  padding: var(--space-xs) var(--space-sm);
   border-radius: 999rem;
   color: var(--color-neutral-100);
   cursor: pointer;
@@ -39,8 +39,33 @@
 
   &--with-icon {
     color: aqua;
+    span {
+      display: none;
+    }
+    &:hover {
+      // padding: var(--space-xs) var(--space-sm);
+
+      span {
+        display: inline-block;
+        padding-left: var(--space-xs);
+        width: auto;
+      }
+    }
+
+    &::before {
+      background-image: url("/assets/img/dg-icon.png");
+      background-repeat: no-repeat;
+      background-position: center left;
+      width: 1rem;
+      height: 2rem;
+      content: "";
+    }
   }
   .dg-icon {
     padding: var(--space-xs) var(--space-xs);
+  }
+
+  &--with-favicon{
+    
   }
 }
