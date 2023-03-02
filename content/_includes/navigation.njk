@@ -10,9 +10,6 @@
         <a class="dg-button dg-button--with-icon" href="{{ entry.url | url }}" {% if entry.url == page.url %} aria-current="page" {% endif %}>          
           <span>{{ entry.title }}</span>
         </a>
-        <a class="dg-button dg-button--with-favicon" href="{{ entry.url | url }}" {% if entry.url == page.url %} aria-current="page" {% endif %}>          
-          <span>{{ entry.title }}</span>
-        </a>
       </li>
     {%- endfor %}
   </ul>

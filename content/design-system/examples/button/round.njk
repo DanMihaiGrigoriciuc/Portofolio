@@ -1,1 +1,13 @@
-<button class="dg-button"><img class="dg-icon" src="/assets/img/dg-icon.png"></img></button>
+{% set navPages = collections.all | eleventyNavigation %}
+<nav class="dg-nav">
+  <ul role="list" >
+    {%- for entry in navPages %}
+      <li>
+        <a class="dg-button dg-button--with-favicon" href="{{ entry.url | url }}" {% if entry.url == page.url %} aria-current="page" {% endif %}> 
+           <i class="fa-solid fa-house"></i>        
+          <span>{{ entry.title }}</span>
+        </a>
+      </li>
+    {%- endfor %}
+  </ul>
+</nav>

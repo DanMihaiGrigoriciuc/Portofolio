@@ -65,7 +65,28 @@
     padding: var(--space-xs) var(--space-xs);
   }
 
-  &--with-favicon{
-    
+  &--with-favicon {
+    color: rgb(0, 255, 34);
+    padding: var(--space-xs) var(--space-md);
+    span {
+      display: none;
+    }
+    &:hover {
+      //padding: var(--space-xs) var(--space-sm);
+
+      span {
+        display: inline-block;
+        padding-left: var(--space-xs);
+        width: auto;
+      }
+    }
+
+    &::before {
+      background-repeat: no-repeat;
+      background-position: center left;
+      width:auto;
+      height: 2rem;
+      content: "";
+    }
   }
 }
