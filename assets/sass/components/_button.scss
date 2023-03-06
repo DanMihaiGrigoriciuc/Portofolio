@@ -67,12 +67,13 @@
 
   &--with-favicon {
     color: rgb(0, 255, 34);
-    padding: var(--space-xs) var(--space-md);
+    padding: var(--space-sm) var(--space-sm);
+
     span {
       display: none;
     }
     &:hover {
-      //padding: var(--space-xs) var(--space-sm);
+      padding: var(--space-xs) var(--space-md);
 
       span {
         display: inline-block;
@@ -84,9 +85,8 @@
     &::before {
       background-repeat: no-repeat;
       background-position: center left;
-      width:auto;
-      height: 2rem;
+      border-radius: 50%;
       content: "";
-    }
   }
+}
 }
