@@ -22,7 +22,7 @@
   left: 0;
 }
 .h2-home::before {
-  background-color: var(--color-neutral-100);
+  background-color: var(--background-color);
   animation: typewriter 7s steps(43) forwards;
 }
 
