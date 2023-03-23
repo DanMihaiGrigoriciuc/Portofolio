@@ -1,29 +1,40 @@
 @use "../abstracts" as *;
 
 :root {
+  /* Size */
+  --size-step-100: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --size-step-200: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
+  --size-step-300: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);
+  --size-step-400: clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);
+  --size-step-500: clamp(2.44rem, calc(2.05rem + 1.93vw), 3.55rem);
   --section-spacing: clamp(1.13rem, calc(0.65rem + 2.39vw), 2.5rem);
 
-  @each $color, $shade in $colors {
-    @each $prop, $value in $shade {
-      --color-#{$color}-#{$prop}: #{$value};
-    }
-  }
+  /* Colors */
+  --color-primary-100: #bad7e9;
+  --color-primary-200: #2c74b3;
+  --color-primary-300: #205295;
+  --color-primary-400: #144272;
+  --color-primary-500: #0a2647;
 
-  @each $screen-size, $property in $type-scale {
-    @if $screen-size == small {
-      @each $prop, $value in $property {
-        --font-size-#{$prop}: #{$value};
-      }
-    } @else {
-      @include media(small) {
-        @each $prop, $value in $property {
-          --font-size-#{$prop}: #{$value};
-        }
-      }
-    }
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #bfbfbf;
+  --color-neutral-300: #7f7f7f;
+  --color-neutral-400: #404040;
+  --color-neutral-500: #000000;
+
+  --background-color: var(--color-neutral-100);
+  --text-color: var(--color-neutral-500);
+  --highlight-color: var(--color-primary-400);
+
+  /* Typography */
+  --font-weight: 400;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: var(--color-neutral-500);
+    --text-color: var(--color-neutral-200);
+    --highlight-color: var(--color-primary-100);
   }
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2rem;
 }

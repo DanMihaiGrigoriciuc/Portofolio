@@ -1,0 +1,19 @@
+---
+title: Notes
+layout: page
+bodyClass: notes
+eleventyNavigation: 
+  key: Notes
+  order: 300
+---
+
+<p class="intro">Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    Maecenas faucibus mollis interdum. Donec sed odio dui.</p>
+
+{% for note in collections.notes %}
+  <article class="flow">
+    <h2>{{ note.data.title }}</h2>
+    {{ note.data.page.excerpt | md | safe }}
+    <a href="{{ note.url | url }}">Read more</a>
+  </article>
+{% endfor %}

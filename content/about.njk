@@ -1,13 +1,23 @@
 ---
 title: About me
 description: All about Dan!
-layout: pages
+layout: page
 bodyClass: about-me
 eleventyNavigation:
   key: About
-  order: 300
+  order: 200
 ---
 
-<h2>About me </h2>
-<p> CV</p>
-<p> Tech used to build this page</p>
+<p class="intro">Nulla vitae elit libero, 
+  a pharetra augue. Cras justo odio, 
+  dapibus ac facilisis in, egestas eget quam.
+    Maecenas faucibus mollis interdum. 
+    Donec sed odio dui.</p>
+
+{% for article in collections.about | sort(false, true, 'data.order') %}
+  <article class="flow">
+    <h2>{{ article.data.title }}</h2>
+    {{ article.data.page.excerpt | md | safe }}
+    {# <a href="{{ article.url | url }}">Read more</a> #}
+  </article>
+{% endfor %}

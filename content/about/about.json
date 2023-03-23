@@ -1,0 +1,6 @@
+{
+  "tags": "about",
+  "bodyClass": "article",
+  "layout": "article",
+  "permalink": "about/{{ page.fileSlug }}/index.html"
+}
