@@ -1,3 +1,12 @@
 .flow > * + * {
-  margin-top: var(--flow-spacer, .75em);
+  margin-top: var(--flow-space, 2em);
+}
+
+/* Flow and rythm */
+:is(h1, h2, h3, blockquote) {
+  --flow-space: 1.5em;
+}
+
+:is(h1, h2, h3) + * {
+  --flow-space: 0.5em;
 }

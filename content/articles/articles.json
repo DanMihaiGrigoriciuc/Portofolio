@@ -1,6 +1,0 @@
-{
-  "tags": "article",
-  "bodyClass": "article",
-  "permalink": "article/{{ page.fileSlug }}/index.html"
-}
-

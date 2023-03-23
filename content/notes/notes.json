@@ -1,0 +1,6 @@
+{
+    "tags": "notes",
+    "bodyClass": "article",
+    "layout": "article",
+    "permalink": "note/{{ page.fileSlug }}/index.html"
+  }

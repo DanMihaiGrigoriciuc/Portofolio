@@ -1,0 +1,15 @@
+article {
+    max-width: 65ch;
+}
+
+/* Blocks */
+.intro {
+    font-size: var(--size-step-1);
+    font-style: italic;
+    max-width: 50ch;
+    text-wrap: balance;
+}
+
+.intro+* {
+    --flow-space: 2em;
+}

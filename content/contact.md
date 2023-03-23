@@ -1,6 +1,6 @@
 ---
 title: Contact
-layout: pages
+layout: page
 bodyClass: contact
 eleventyNavigation:
   key: Contact
