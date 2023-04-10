@@ -22,9 +22,13 @@
   --color-neutral-400: #404040;
   --color-neutral-500: #000000;
 
+  --color-secondary-400:#bf2e97;
+
   --background-color: var(--color-neutral-100);
   --text-color: var(--color-neutral-500);
   --highlight-color: var(--color-primary-400);
+  --link-color: var(--color-primary-400);
+  --blink-color: var(--color-neutral-500);  
 
   /* Typography */
   --font-weight: 400;
@@ -36,5 +40,7 @@
     --background-color: var(--color-neutral-500);
     --text-color: var(--color-neutral-200);
     --highlight-color: var(--color-primary-100);
+    --link-color: var(--color-neutral-200);
+    --blink-color: var(--color-neutral-100);
   }
 }

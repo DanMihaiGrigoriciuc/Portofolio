@@ -3,7 +3,7 @@
   text-align: center;
   place-content: center;
 }
-.h2-home {
+.typewriter { 
   font-size: clamp(1rem, 2.5vw, 2.5rem);
   position: relative;
   margin: top 30px;
@@ -12,8 +12,8 @@
   word-spacing: 0.25em;
 }
 
-.h2-home::before,
-.h2-home::after {
+.typewriter::before,
+.typewriter::after {
   content: "";
   position: absolute;
   top: 0;
@@ -21,25 +21,26 @@
   bottom: 0;
   left: 0;
 }
-.h2-home::before {
+.typewriter::before {
   background-color: var(--background-color);
-  animation: typewriter 7s steps(43) forwards;
+  animation: typewriter 5s steps(33) forwards;
 }
 
-.h2-home::after{
+.typewriter::after{
   width: 0.125em;
   background-color: black;
   animation: 
-      typewriter 7s steps(43)  forwards,
-      blink 750ms steps(43) infinite;
+      typewriter 5s steps(33)  forwards,
+      blink 750ms steps(33) infinite;
 }
 
 .subtitle {
+  font-family: 'Roboto', sans-serif;
   font-size: 30px;
   margin: 10rem;
   opacity: 0;
   transform: translateY(3rem);
-  animation: fadeInUp 7s ease forwards;
+  animation: fadeInUp 5s ease forwards;
 }
 
 @keyframes typewriter {
