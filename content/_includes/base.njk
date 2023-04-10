@@ -8,12 +8,13 @@
         <meta name="description" content="{% if description %}{{ description }}{% else %}Hi there! My name is Dan and I'm a front-end developer.{% endif %}">
         <link rel="icon" href="/favicon.ico">
         <link rel="stylesheet" href="/css/style.css"/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body class="{{ bodyClass }}">
         <header>
             {% include 'navigation.njk' %}
         </header>
-        <main id="main-content" class="flow">
+        <main id="main-content" class="flow">        
             {{ content | safe }}
         </main>
         {% include 'footer.njk' %}

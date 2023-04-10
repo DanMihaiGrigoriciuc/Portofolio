@@ -1,6 +1,48 @@
-footer{
-margin-top: auto;
-width: 100%;
-padding: var(--section-spacing);
-border-top: 1px dotted var(--highlight-color);
+footer {
+  --color-icon-instagram-hover: rgb(227, 40, 40);
+  --icon-size: 60px;
+
+  margin-top: auto;
+  width: 100%;
+  padding: var(--section-spacing);
+  border-top: 1px dotted var(--highlight-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-media {
+  i {
+    width: 50%;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.social-media-icon i {
+  display: inline-block;
+  margin-left: 20px;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  border: 1px solid var(--color-secondary-400);
+  border-radius: 50%;
+  text-align: center;
+  color: var(--link-color);
+}
+
+.bxl-facebook:hover {
+  color: var(--color-primary-200);
+}
+.bxl-twitter:hover {
+  color: var(--color-primary-400);
+}
+.bxl-instagram:hover {
+  color: var(--color-icon-instagram-hover);
+}
+
+.social-media-icon i {
+  font-size: 30px;
+  line-height: var(--icon-size);
 }

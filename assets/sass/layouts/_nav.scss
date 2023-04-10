@@ -1,0 +1,38 @@
+/*Animation from nav bar*/
+ul.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style-type: none;
+}
+ul.nav-list li {
+  padding: 6px 0;
+}
+ul.nav-list li a {
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  color: var(--link-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+ul.nav-list li a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--color-secondary-400);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
+}
+ul.nav-list li a:hover {
+  opacity: 0.8;
+}
+ul.nav-list li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
