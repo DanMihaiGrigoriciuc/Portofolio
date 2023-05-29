@@ -10,7 +10,8 @@
     "build:eleventy": "eleventy",
     "postbuild": "postcss _site/css/*.css -u autoprefixer cssnano -r --no-map",
     "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:sass build:eleventy"
+    "build": "npm-run-all build:sass build:eleventy",
+    "build:prod": "cross-env SITE_ENV=prod npm-run-all build"
   },
   "repository": {
     "type": "git",
@@ -19,14 +20,14 @@
   "author": "vle",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "autoprefixer": "^10.3.1",
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.0.7",
+    "cssnano": "^5.1.15",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.3.6",
+    "postcss": "^8.4.22",
     "postcss-cli": "^8.3.1",
-    "sass": "^1.37.5"
+    "sass": "^1.62.0"
   },
   "browserslist": [
     "last 2 versions"

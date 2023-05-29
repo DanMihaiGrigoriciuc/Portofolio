@@ -1,6 +1,7 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const { DateTime } = require("luxon");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./content/sass/");
@@ -11,6 +12,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./assets/fonts");
   eleventyConfig.addPassthroughCopy("./assets/img");
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
+    baseHref: "Portofolio",
+    extensions: process.env["SITE_ENV"] === "prod" ? "html" : "false",
+    filters: {
+      base: "htmlBaseUrl",
+      html: "transformWithHtmlBase",
+      pathPrefix: "addPathPrefixToUrl",
+    },
+  });
   eleventyConfig.addFilter("md", function (content = "") {
     return markdownIt({ html: true }).render(content);
   });
