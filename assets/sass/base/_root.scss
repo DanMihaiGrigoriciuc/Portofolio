@@ -23,7 +23,12 @@
   --color-neutral-500: #000000;
 
   --color-secondary-400:#bf2e97;
+  --color-secondary-500: #CC6666;
+  --color--secondary-600:#CC4949;
 
+
+  --backround-imput-color: var(--color--secondary-600);
+  --form-color: var(--color-secondary-500);
   --background-color: var(--color-neutral-100);
   --text-color: var(--color-neutral-500);
   --highlight-color: var(--color-primary-400);
@@ -42,5 +47,6 @@
     --highlight-color: var(--color-primary-100);
     --link-color: var(--color-neutral-200);
     --blink-color: var(--color-neutral-100);
+    --feedback-input-color: var(--color-neutral-100);
   }
 }
